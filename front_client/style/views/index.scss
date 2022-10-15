@@ -1,0 +1,80 @@
+.login-container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(156, 189, 254);
+}
+
+.login{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 460px;
+
+  .login__logo{
+    height: 200px;
+    background:{
+      image: url(/front_client/img/login_img.jpeg);
+      position: center;
+      size: auto 100%;
+      repeat: no-repeat;
+    }
+  }
+
+  .login__select{
+    width: 300px;
+    margin: 25px auto 0px;
+    font-size: 1em;
+    padding: 5px;
+
+    .login__select__forgot{
+      padding-left: 142px;
+    }
+  }
+
+  .login__form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+
+    input{
+      &:focus{
+        outline: none;
+      }  
+    }
+    
+    .login__form__id{
+      padding: 5px 10px;
+      border-bottom: none;
+      border-radius: 0 0 3px 3px;
+      border-style: none;
+    }
+
+    .login__form__pw{
+      margin-top: 2px;
+      padding: 5px 10px;
+      border-bottom: none;
+      border-radius: 0 0 3px 3px;
+      border-style: none;
+    }
+
+    .login__form__bt{
+      height: 45px;
+      margin-top: 10px;
+      border: 1px solid #353535;
+      border-radius: 4px;
+      background: $main-color;
+      
+      color: white;
+      cursor: pointer;// 마우스를 올리면 커서가 손가락 모양으로 바뀌넹
+  
+      &:hover{
+        background:$active-color;
+      }
+    }
+
+    
+  }
+}

@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  height:100%;
+}
+
+body{
+  height:100%;
+  margin:0;
+  min-width:300px;
+}
+
+//생상과 관련된 변수들을 선언하는 페이지
+$main-color: rgb(28, 28, 212);
+$active-color: rgb(54, 81, 234);
